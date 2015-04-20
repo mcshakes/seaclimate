@@ -7,3 +7,16 @@
   padding: 0rem;
   float: right;
 }
+
+body {
+  background-image: image-url("blue_ocean_background.png");
+  background-attachment: fixed;
+}
+
+.textbox {
+  background-color: #7E8AA2
+}
+
+.textbox p {
+  color: #FF9800;
+}
