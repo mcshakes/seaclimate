@@ -1,23 +1,18 @@
-<nav class="icon-bar five-up" data-topbar role="navigation">
-  <!-- <ul class="title-area">
-    <li class="name">
-      <h1><a href="/">SafeCatch</a></h1>
-    </li>
-  </ul> -->
-
+<nav class="icon-bar three-up" role="navigation">
   <a class="item">
-    <i class="fi-home"><%= link_to "Home", root_path %></i>
+    <%= link_to root_path do%>
+      <i class="fi-home"></i>
+      <label id='itemlabel1'>Home</label>
+    <% end %>
   </a>
   <a class="item">
-    <i class="fi-bookmark"></i>
+    <i class="fi-anchor"></i>
+    <label id='itemlabel2'>Register</label>
   </a>
   <a class="item">
-    <i class="fi-info"><%= link_to "About", static_pages_about_path %></i>
-  </a>
-  <a class="item">
-    <i class="fi-mail"></i>
-  </a>
-  <a class="item">
-    <i class="fi-like"></i>
+    <%= link_to static_pages_about_path do %>
+      <i class="fi-info"></i>
+      <label id='itemlabel3'>Info</label>
+    <% end %>
   </a>
 </nav>
