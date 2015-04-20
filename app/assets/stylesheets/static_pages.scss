@@ -2,6 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+/* Home Page Styling */
+
+#hero-image {
+  background: image-url("Optimized-ocean.jpg");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // background-attachment: fixed;
+}
+
 .icon-bar > * {
   font-size: 1rem;
   padding: 0rem;
@@ -9,14 +20,19 @@
 }
 
 body {
-  background-image: image-url("blue_ocean_background.png");
+  background-image: image-url("Optimized-ocean.jpg");
   background-attachment: fixed;
 }
-
-.textbox {
-  background-color: #7E8AA2
-}
+//
+// .textbox {
+//   background-color: #7E8AA2
+// }
 
 .textbox p {
   color: #FF9800;
+}
+
+.first-divider {
+  background: image-url("dark_embroider.png") repeat;
+  background-attachment: fixed;
 }
