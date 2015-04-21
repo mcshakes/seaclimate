@@ -13,6 +13,24 @@
   // background-attachment: fixed;
 }
 
+.hero h2.start {
+  line-height: 0.9em;
+  color: #B8AC32;
+  margin: 0px;
+  padding: 0px;
+  font-family: "hotel-open", sans-serif;
+  font-style: normal;
+}
+
+.hero h2.title {
+  font-size: 6em;
+  color: #B8AC32;
+}
+
+.hero p.intro{
+  color: #FF9800;
+}
+
 .icon-bar > * {
   font-size: 1rem;
   padding: 0rem;
