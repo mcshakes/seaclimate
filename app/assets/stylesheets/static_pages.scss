@@ -5,12 +5,9 @@
 
 /* Home Page Styling */
 
-#hero-image {
-  // background: image-url("Optimized-ocean.jpg");
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center center;
-  // background-attachment: fixed;
+body {
+  background-image: image-url("diamond-zag.png");
+  background-attachment: fixed;
 }
 
 .hero {
@@ -55,22 +52,13 @@
   float: right;
 }
 
-body {
-  background-image: image-url("diamond-zag.png");
-  background-attachment: fixed;
-}
-//
-// .textbox {
-//   background-color: #7E8AA2
-// }
 
-.textbox p {
-  color: #FF9800;
-}
-
-.first-divider {
-  background: image-url("dark_embroider.png") repeat;
-  background-attachment: fixed;
+.bottom {
+  margin-top: 5em;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // background-attachment: fixed;
 }
 
 /* About Page Styling */
