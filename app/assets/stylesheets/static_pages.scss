@@ -16,8 +16,8 @@
 .hero h2.start {
   line-height: 0.9em;
   color: #B8AC32;
-  margin: 0px;
-  padding: 0px;
+  margin: auto;
+  padding: auto;
   font-family: "hotel-open", sans-serif;
   font-style: normal;
 }
@@ -26,9 +26,22 @@
   font-size: 6em;
   color: #B8AC32;
 }
+.centered {
+  text-align: center;
+}
+
+.introduction {
+  background: none repeat scroll 0% 0% rgba(44, 41, 35,0.75);
+  text-shadow: 1px 1px 1px rgba(44, 41, 35, 0.5);
+}
 
 .hero p.intro{
   color: #FF9800;
+  font-size: 1.5em;
+}
+
+.explanation {
+  background: none repeat scroll 0% 0% rgba(187, 172, 50, 0.75);
 }
 
 .icon-bar > * {
