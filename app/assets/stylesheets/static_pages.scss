@@ -5,12 +5,13 @@
 
 /* Home Page Styling */
 
-#hero-image {
-  // background: image-url("Optimized-ocean.jpg");
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center center;
-  // background-attachment: fixed;
+body {
+  background-image: image-url("diamond-zag.png");
+  background-attachment: fixed;
+}
+
+.hero {
+  margin-top: 6em;
 }
 
 .hero h2.start {
@@ -25,6 +26,7 @@
 .hero h2.title {
   font-size: 6em;
   color: #B8AC32;
+  margin-bottom: 2em;
 }
 .centered {
   text-align: center;
@@ -50,20 +52,32 @@
   float: right;
 }
 
-body {
-  background-image: image-url("diamond-zag.png");
-  background-attachment: fixed;
-}
-//
-// .textbox {
-//   background-color: #7E8AA2
-// }
 
-.textbox p {
-  color: #FF9800;
+.bottom {
+  margin-top: 5em;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // background-attachment: fixed;
 }
 
-.first-divider {
-  background: image-url("dark_embroider.png") repeat;
-  background-attachment: fixed;
+/* About Page Styling */
+
+.about {
+  background: none repeat scroll 0% 0% rgba(232, 230, 224, 0.65);
+  color: black;
+  margin-top: 3em;
+}
+
+.about h2 {
+  margin-bottom: 1em;
+}
+
+.about .nic-pic {
+  margin-left: 3em;
+}
+
+.about p {
+  font-size: 1.25em;
+  line-height: 1.3em;
 }
