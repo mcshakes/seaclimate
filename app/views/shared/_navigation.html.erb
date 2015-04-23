@@ -1,7 +1,9 @@
 <nav class="icon-bar four-up" role="navigation">
   <a class="item">
-    <i class="fi-anchor"></i>
-    <label id='itemlabel2'>Log In</label>
+    <%= link_to dashboard_path do %>
+      <i class="fi-anchor"></i>
+      <label id='itemlabel2'>Log In</label>
+    <% end %>
   </a>
   <a class="item">
     <%= link_to static_pages_about_path do %>
@@ -10,7 +12,7 @@
     <% end %>
   </a>
   <a class="item">
-    <%= link_to root_path do%>
+    <%= link_to user_path(current_user) do %>
       <i class="fi-results-demographics"></i>
       <label id='itemlabel1'>Dashboard</label>
     <% end %>
