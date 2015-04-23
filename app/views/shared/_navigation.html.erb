@@ -12,9 +12,16 @@
     <% end %>
   </a>
   <a class="item">
-    <%= link_to user_path(current_user) do %>
+    <% if current_user %>
+      <%= link_to user_path(current_user.id) do %>
+        <i class="fi-results-demographics"></i>
+        <label id='itemlabel1'>Dashboard</label>
+      <% end %>
+    <% else %>
+    <%= link_to dashboard_path do %>
       <i class="fi-results-demographics"></i>
       <label id='itemlabel1'>Dashboard</label>
+    <% end %>
     <% end %>
   </a>
   <a class="item">

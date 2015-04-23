@@ -10,10 +10,20 @@ class SessionsController < ApplicationController
     end
   end
 
+  def destroy
+    sign_out
+  end
+
 
   private
 
   def auth_hash
     request.env["omniauth.auth"]
+  end
+
+  def sign_out
+    session[:user_id] = nil
+    redirect_to root_path
+    flash[:error] = "signed out"
   end
 end
