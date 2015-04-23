@@ -1,10 +1,33 @@
-<div class="panel">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-    <h1 class="home">You Are Authorized</h1>
-    <%= image_tag current_user.image, class: "img-circle img-thumbnail home-image" %>
-    <h2 class="home">  <%= current_user.nickname %></h2>
-    <%= link_to "Logout", "", class: "btn btn-lg btn-default btn-home" %>
+<div class="user-dashboard">
+
+  <div class="divide">
+    <section class="row">
+      <div class="columns small-12"></div>
+    </section>
   </div>
-  <div class="col-md-2"></div>
+
+  <div class="user-content">
+    <section class="row">
+      <div class="columns large-12">
+        <h1 class="centered">You Are Logged In As:</h1>
+
+        <div class="user-image centered">
+          <div class="columns large-12">
+            <%= image_tag current_user.image, class: "img-circle img-thumbnail home-image" %>
+          </div>
+        </div>
+
+        <h2 class="centered"> <%= current_user.nickname %></h2>
+        <div class="centered"><a href="#"></a><%= link_to "Logout", "", class: "button radius", id: "logout" %></div>
+
+      </div>
+    </section>
+  </div>
+
+  <div class="divide">
+    <section class="row">
+      <div class="columns small-12"></div>
+    </section>
+  </div>
+
 </div>

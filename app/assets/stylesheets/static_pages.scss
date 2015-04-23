@@ -92,3 +92,39 @@ body {
   font-size: 1.25em;
   line-height: 1.3em;
 }
+
+/* user show page */
+
+.divide {
+  background: none repeat scroll 0% 0% rgba(27, 60, 89, 0.5);
+  height: 2em;
+  margin-top: 3em;
+}
+
+.user-dashboard {
+  background: none repeat scroll 0% 0% rgba(187, 172, 50, 0.40);
+  margin-top: 5em;
+}
+
+.user-dashboard {
+  text-align: centered;
+}
+
+img.img-circle.img-thumbnail.home-image {
+  height: 200px;
+  margin-bottom: 2em;
+}
+
+.user-content {
+  margin-top: 2em;
+}
+
+#logout {
+  background-color: transparent;
+  border-width: 5px;
+  color: #60BFBF;
+  font-weight: 180px;
+  border-color: #60BFBF;
+  margin-top: 20px;
+  font-size: 2em;
+}
