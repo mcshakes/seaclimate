@@ -6,7 +6,7 @@ one:
   provider: MyString
   token: MyString
   uid: MyString
-  image_url: MyString
+  image: MyString
 
 two:
   nickname: MyString
@@ -14,4 +14,4 @@ two:
   provider: MyString
   token: MyString
   uid: MyString
-  image_url: MyString
+  image: MyString
