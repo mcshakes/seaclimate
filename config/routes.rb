@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   # get "/dashboard", to: "dashboard#show"
 
   resources "dashboard"
+  get '/dashboard', to: "dashboard#show"
   get "/auth/:provider/callback", to: "sessions#create"
 end
