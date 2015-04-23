@@ -1,13 +1,17 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
 
 /* Home Page Styling */
 
 body {
-  background-image: image-url("diamond-zag.png");
+  background-image: image-url("Optimized-ocean.jpg");
+  // background-image: image-url("diamond-zag.png");
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // width: 100%;
 }
 
 .hero {
@@ -19,7 +23,7 @@ body {
   color: #B8AC32;
   margin: auto;
   padding: auto;
-  font-family: "hotel-open", sans-serif;
+  font-family: 'Indie Flower', cursive;
   font-style: normal;
 }
 
