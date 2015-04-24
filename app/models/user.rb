@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many :trips
 
   def self.find_or_create_from_auth(data)
     user = User.find_or_create_by(provider: data.provider, uid: data.id)
