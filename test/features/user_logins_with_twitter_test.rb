@@ -38,8 +38,8 @@ class UserLoginTwitterTest < ActionDispatch::IntegrationTest
     visit root_path
     click_link_or_button "Log In"
     click_link_or_button "Login with Twitter"
-    # save_and_open_page
     assert page.has_content?("fakemocker")
+    # assert_equal user_path(id: user.id), current_path
   end
 
 
