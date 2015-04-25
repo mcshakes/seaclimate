@@ -6,19 +6,32 @@ class SessionsControllerTest < ActionController::TestCase
   #   request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:twitter]
   # end
   #
-  def setup
+
+  def mock_auth_hash
     OmniAuth.config.mock_auth[:twitter] = OmniAuth::AuthHash.new({
-      :provider => "twitter",
-      :nickname => "wetwillie"
+      "provider" => "twitter",
+      "uid"      => "12345",
+      "user_info" => {
+        "nickname" => "fakemocker",
+        "image" => "fake_mocker_thumbnail"
+      },
+      "credentials" => {
+        "token"   => "mock_token",
+        "secret"  => "mock_secret"
+      }
       })
   end
 
-  test "should create new user" do
-    skip
-    get :create, nickname: "wetwillie"
+  def create_user
+    OmniAuth.config.mock_auth[:twitter] = nil
+    mock_auth_hash
+    get :create
+  end
 
-    assert_equal session[:user_id], "wetwillie"
-    assert_redirected_to user_path(nickname: "wetwillie")
+  test "should create new user" do
+    create_user
+    assert_equal session[:user_id], "fakemocker"
+    # assert_redirected_to user_path(nickname: "fakemocker")
   end
 
 
