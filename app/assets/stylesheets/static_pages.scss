@@ -131,14 +131,30 @@ img.img-circle.img-thumbnail.home-image {
 }
 
 /* trips index and actions rendered within user dashboard */
-
-.all-trips {
+.trip-index {
   background: none repeat scroll 0% 0% rgba(187, 89, 50, 0.40);
   border-width: 5px;
   border-color: #60BFBF;
   text-align: centered;
-
+  margin-top: 3em;
 }
+
+#add-trip {
+  background-color: transparent;
+  border-width: 5px;
+  color: #60BFBF;
+  font-weight: 180px;
+  border-color: #60BFBF;
+  font-size: 2em;
+}
+
+.add-button {
+  margin-bottom: 1em;
+}
+
+// .all-trips {
+//
+// }
 
 .new-trip-form {
   margin-top: 3em;

@@ -1,14 +1,37 @@
-<div class="trip index">
-  <h1>Your Trips</h1>
-
-  <%= link_to "Add Trip", new_trip_path, class: "btn btn-infop" %>
-
-  <div class="all-trips">
-    <% @trips.each do |trip| %>
-      <%= trip.name %>
-      <%= trip.long %>
-      <%= trip.lat %>
-    <% end %>
+<div class="trip-index">
+  <div class="title">
+    <h1 class="centered">Your Trips</h1>
   </div>
+
+  <div class="add-button" align="center">
+    <section class="row">
+      <%= link_to "Add Trip", new_trip_path, class: "button radius", id: "add-trip" %>
+    </section>
+  </div>
+
+  <section class="row">
+    <div class="trip-table">
+      <table class=responsive align="center">
+        <thead>
+          <th width="200">Name</th>
+          <th width="150">Longitude</th>
+          <th width="150">Latitude</th>
+          <th width="400">Climate Data</th>
+        </thead>
+            <% @trips.each do |trip| %>
+        <tbody>
+          <div class="all-trips">
+              <td><%= trip.name %></td>
+              <td><%= trip.long %></td>
+              <td><%= trip.lat %></td>
+              <td><%= trip.weather %></td>
+            <% end %>
+          </div>
+        </tbody>
+
+      </table>
+    </div>
+  </section>
+
 
 </div>
