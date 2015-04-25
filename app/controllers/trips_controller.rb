@@ -4,5 +4,9 @@ class TripsController < ApplicationController
 
   end
 
-  
+  def create
+    @trip = Trip.new(params[:])
+  end
+
+
 end
