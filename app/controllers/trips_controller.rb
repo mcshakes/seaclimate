@@ -1,7 +1,7 @@
 class TripsController < ApplicationController
 
   def index
-
+    @trips = Trip.all
   end
 
   def new
@@ -12,10 +12,10 @@ class TripsController < ApplicationController
     @trip = Trip.new(trip_params)
     if @trip.save
       flash[:notice] = "Trip Created!"
-      redirect_to trip_path
+      redirect_to trips_path
     else
       flash[:notice] = "Shit happened..."
-      redirect_to trip_path
+      redirect_to trips_path
     end
   end
 
