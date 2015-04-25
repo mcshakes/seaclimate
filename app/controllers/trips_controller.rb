@@ -12,10 +12,10 @@ class TripsController < ApplicationController
     @trip = Trip.new(trip_params)
     if @trip.save
       flash[:notice] = "Trip Created!"
-      redirect_to trips_path
+      redirect_to user_path(current_user)
     else
       flash[:notice] = "Shit happened..."
-      redirect_to trips_path
+      redirect_to user_path(current_user)
     end
   end
 
