@@ -35,6 +35,7 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'spring'
   gem 'capybara'
+  gem 'launchy'
   gem 'simplecov'
   gem 'codeclimate-test-reporter'
 end
