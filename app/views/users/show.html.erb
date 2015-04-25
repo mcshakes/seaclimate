@@ -18,7 +18,12 @@
         </div>
 
         <h2 class="centered"> <%= current_user.nickname %></h2>
-        <%= link_to "Log Out", logout_path, method: :delete, class: "button radius", id: "logout" %>
+
+        <div class="log-out" align="center">
+          <section class="row">
+            <%= link_to "Log Out", logout_path, method: :delete, class: "button radius", id: "logout" %>
+          </section>
+        </div>
 
       </div>
     </section>
