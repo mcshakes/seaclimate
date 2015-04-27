@@ -9,6 +9,11 @@ class WeatherService
     parse(connection.get("weather?lat=#{lat}&lon=#{lon}&APPID=#{ENV["WEATHER_KEY"]}"))
   end
 
+  # Denver is (39.73,-104.9903)
+  # I also need to be able to take a city and country combo
+  # Return :wind, :rain, :weather[{:main, :description, :temp}]
+
+
   private
 
   def parse(data)
