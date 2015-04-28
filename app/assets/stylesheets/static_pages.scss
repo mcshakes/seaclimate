@@ -7,7 +7,6 @@
 
 body {
   background-image: image-url("Optimized-ocean.jpg");
-  // background-image: image-url("diamond-zag.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,6 +15,7 @@ body {
 
 .hero {
   margin-top: 6em;
+  margin-bottom: 5em;
 }
 
 .hero h2.start {
@@ -30,7 +30,7 @@ body {
 .hero h2.title {
   font-size: 6em;
   color: #B8AC32;
-  margin-bottom: 2em;
+  // margin-bottom: 2em;
   font-family: 'Gravitas One', serif;
 }
 .centered {
@@ -40,6 +40,8 @@ body {
 .introduction {
   background: none repeat scroll 0% 0% rgba(44, 41, 35,0.75);
   text-shadow: 1px 1px 1px rgba(44, 41, 35, 0.5);
+  margin-top: 5em;
+
 }
 
 .hero p.intro{

@@ -14,7 +14,7 @@ class TripsController < ApplicationController
       flash[:notice] = "Trip Created!"
       redirect_to user_path(current_user)
     else
-      flash[:notice] = "Shit happened..."
+      flash[:notice] = "Something happened..."
       redirect_to user_path(current_user)
     end
   end
