@@ -30,16 +30,22 @@ body {
 .hero h2.title {
   font-size: 6em;
   color: #B8AC32;
-  margin-bottom: 2em;
+  // margin-bottom: 2em;
   font-family: 'Gravitas One', serif;
 }
 .centered {
   text-align: center;
 }
 
+.hero img.front-login-options {
+  // margin-bottom: 3em;
+}
+
 .introduction {
   background: none repeat scroll 0% 0% rgba(44, 41, 35,0.75);
   text-shadow: 1px 1px 1px rgba(44, 41, 35, 0.5);
+  margin-top: 5em;
+
 }
 
 .hero p.intro{
