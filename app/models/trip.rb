@@ -1,4 +1,12 @@
 class Trip < ActiveRecord::Base
-  belongs_to :user
+  has_one :weather
+  belongs_to   :user
+  after_create :add_weather
+
+  def add_weather
+    build_weather.create_from_weather_service
+  end
+
+
 
 end
