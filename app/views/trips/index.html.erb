@@ -24,7 +24,14 @@
               <td><%= trip.name %></td>
               <td><%= trip.long %></td>
               <td><%= trip.lat %></td>
-              <td><%= trip.weather_summary %></td>
+              <% if !trip.weather.nil? %>
+                <td>"The weather is <%= trip.weather.description %>, with a temperature of <%= trip.weather.temp %> and
+                wind speeds of <%= trip.weather.wind_speed %>"</td>
+              <% else %>
+                <td>
+                  "Weather not available at this time"
+                </td>
+              <% end %>
             <% end %>
           </div>
         </tbody>
@@ -32,6 +39,4 @@
       </table>
     </div>
   </section>
-
-
 </div>
