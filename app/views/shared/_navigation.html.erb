@@ -1,8 +1,15 @@
 <nav class="icon-bar four-up" role="navigation">
   <a class="item">
-    <%= link_to "/auth/twitter" do %>
-      <i class="fi-anchor"></i>
-      <label id='itemlabel2'>Log In With Twitter</label>
+    <% if current_user %>
+      <%= link_to logout_path, method: :delete do %>
+        <i class="fi-skull"></i>
+        <label id='itemlabel1'>Log Out</label>
+      <% end %>
+    <% else %>
+      <%= link_to "/auth/twitter" do %>
+        <i class="fi-anchor"></i>
+        <label id='itemlabel2'>Log In With Twitter</label>
+      <% end %>
     <% end %>
   </a>
   <a class="item">
