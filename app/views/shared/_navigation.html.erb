@@ -1,5 +1,11 @@
-<nav class="icon-bar four-up" role="navigation">
+<nav class="icon-bar three-up" role="navigation">
   <a class="item">
+    <a class="item">
+      <%= link_to root_path do%>
+        <i class="fi-home"></i>
+        <label id='itemlabel1'>Home</label>
+      <% end %>
+    </a>
     <% if current_user %>
       <%= link_to logout_path, method: :delete do %>
         <i class="fi-skull"></i>
@@ -13,28 +19,18 @@
     <% end %>
   </a>
   <a class="item">
-    <%= link_to static_pages_about_path do %>
-      <i class="fi-info"></i>
-      <label id='itemlabel3'>About Us</label>
-    <% end %>
-  </a>
-  <a class="item">
     <% if current_user %>
       <%= link_to user_path(current_user.id) do %>
         <i class="fi-results-demographics"></i>
         <label id='itemlabel1'>Dashboard</label>
       <% end %>
     <% else %>
-      <%= link_to "/auth/twitter" do %>
-        <i class="fi-results-demographics"></i>
-        <label id='itemlabel1'>Dashboard</label>
+    <a class="item">
+      <%= link_to static_pages_about_path do %>
+        <i class="fi-info"></i>
+        <label id='itemlabel3'>About Us</label>
       <% end %>
-    <% end %>
-  </a>
-  <a class="item">
-    <%= link_to root_path do%>
-      <i class="fi-home"></i>
-      <label id='itemlabel1'>Home</label>
+    </a>
     <% end %>
   </a>
 </nav>
