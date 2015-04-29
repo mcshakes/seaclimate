@@ -19,6 +19,6 @@ class Weather < ActiveRecord::Base
   private
 
   def weather
-    @weather ||= WeatherService.new.weather_data(trip.lat, trip.long)
+    @weather = WeatherService.new.weather_data(trip.lat, trip.long)
   end
 end
