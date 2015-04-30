@@ -25,8 +25,10 @@
               <td><%= trip.long %></td>
               <td><%= trip.lat %></td>
               <% if !trip.weather.nil? %>
-                <td>"The weather is <%= trip.weather.description %>, with a temperature of <%= trip.weather.temp %> and
-                wind speeds of <%= trip.weather.wind_speed %>"</td>
+                <td>Conditions: <%= trip.weather.description %></td><br>
+                <td>Temperature: <%= trip.weather.temp %></td><br>
+                <td>Wind Speed: <%= trip.weather.wind_speed %></td><br>
+                <td>Wind Direction: <%= trip.weather.degree %></td><br>
               <% else %>
                 <td>
                   "Weather not available at this time"
