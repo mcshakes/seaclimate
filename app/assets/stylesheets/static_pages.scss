@@ -10,7 +10,6 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  // width: 100%;
 }
 
 .hero {
@@ -30,7 +29,6 @@ body {
 .hero h2.title {
   font-size: 6em;
   color: #B8AC32;
-  // margin-bottom: 2em;
   font-family: 'Gravitas One', serif;
 }
 .centered {
@@ -56,7 +54,6 @@ body {
 .icon-bar > * {
   font-size: 1rem;
   padding: 0rem;
-  // float: right;
   width: 33.33%;
 }
 
@@ -68,11 +65,6 @@ body {
 .bottom {
   margin-top: 5em;
   margin-bottom: 3em;
-
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center center;
-  // background-attachment: fixed;
 }
 
 /* About Page Styling */
@@ -138,6 +130,10 @@ img.img-circle.img-thumbnail.home-image {
 
 .trip-table {
   margin-top: -3em;
+}
+
+#table {
+  border-spacing: 0;
 }
 
 #add-trip {
