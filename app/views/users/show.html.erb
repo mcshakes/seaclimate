@@ -1,21 +1,34 @@
 <div class="user-dashboard">
+
+
+
   <div class="user-content">
     <section class="row">
+      <div class="columns large-12">
+        <h1 class="centered">You Are Logged In As:</h1>
 
-        <div class="columns large-6">
-          <%= image_tag current_user.image, class: "img-circle img-thumbnail home-image" %>
+        <div class="user-image centered">
+          <div class="columns large-12">
+            <%= image_tag current_user.image, class: "img-circle img-thumbnail home-image" %>
+          </div>
         </div>
 
-      <div class="columns large-6">
-        <h1 class="centered">Logged In As:</h1>
-        <h3 class="centered"> <%= current_user.nickname %></h3>
-      </div>
+        <h2 class="centered"> <%= current_user.nickname %></h2>
 
+        <div class="log-out" align="center">
+          <section class="row">
+            <%= link_to "Log Out", logout_path, method: :delete, class: "button radius", id: "logout" %>
+          </section>
+        </div>
+
+      </div>
     </section>
   </div>
 
 </div>
 
-<div class="all-trips">
-  <%= render template: "trips/index" %>
-</div>
+<section class="row">
+  <div class="all-trips">
+    <%= render template: "trips/index" %>
+  </div>
+</section>
