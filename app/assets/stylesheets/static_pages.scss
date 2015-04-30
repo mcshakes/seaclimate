@@ -101,7 +101,7 @@ body {
 
 .user-dashboard {
   background: none repeat scroll 0% 0% rgba(187, 172, 50, 0.40);
-  margin-top: 5em;
+  margin-top: 3em;
 }
 
 .user-dashboard {
@@ -114,19 +114,18 @@ img.img-circle.img-thumbnail.home-image {
   margin-bottom: 2em;
 }
 
-.user-content {
-  margin-top: 2em;
-}
+/* I like the setup below but it itsn't needed for a logout */
 
-#logout {
-  background-color: transparent;
-  border-width: 5px;
-  color: #60BFBF;
-  font-weight: 180px;
-  border-color: #60BFBF;
-  margin-top: 20px;
-  font-size: 2em;
-}
+// #logout {
+//   background-color: transparent;
+//   border-width: 5px;
+//   color: #60BFBF;
+//   font-weight: 180px;
+//   border-color: #60BFBF;
+//   margin-top: 20px;
+//   font-size: .5em;
+// }
+
 
 /* trips index and actions rendered within user dashboard */
 .trip-index {
@@ -137,22 +136,20 @@ img.img-circle.img-thumbnail.home-image {
   margin-top: 3em;
 }
 
+.trip-table {
+  margin-top: -3em;
+}
+
 #add-trip {
   background-color: transparent;
   border-width: 5px;
   color: #60BFBF;
-  font-weight: 180px;
+  // font-weight: 200px;
   border-color: #60BFBF;
-  font-size: 2em;
+  font-size: .8em;
 }
 
-.add-button {
-  margin-bottom: 1em;
-}
-
-// .all-trips {
-//
-// }
+/* Add Trip form */
 
 .new-trip-form {
   margin-top: 3em;

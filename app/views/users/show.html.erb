@@ -1,30 +1,20 @@
-<div class="user-dashboard">
-
+<div class="user-dashboard columns small-4">
   <div class="user-content">
     <section class="row">
-      <div class="columns large-12">
 
         <div class="user-image centered">
-          <div class="columns large-12">
             <%= image_tag current_user.image, class: "img-circle img-thumbnail home-image" %>
-          </div>
         </div>
 
-        <h2 class="centered"> <%= current_user.nickname %></h2>
+        <h3 class="centered"> <%= current_user.nickname %></h3>
 
-        <div class="log-out" align="center">
-          <section class="row">
-            <%= link_to "Log Out", logout_path, method: :delete, class: "button radius", id: "logout" %>
-          </section>
-        </div>
 
-      </div>
+
     </section>
   </div>
-
 </div>
 
-<section class="row">
+<section class="row columns medium-8">
   <div class="all-trips">
     <%= render template: "trips/index" %>
   </div>
