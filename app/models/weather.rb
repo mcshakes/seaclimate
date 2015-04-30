@@ -7,13 +7,20 @@ class Weather < ActiveRecord::Base
       self.description  = weather["weather"].first["description"]
       self.temp         = weather["main"]["temp"]
       self.wind_speed   = weather["wind"]["speed"]
+      self.wind_dir     = weather["wind"]["deg"]
+      self.max_temp     = weather["main"]["temp_max"]
+      self.clouds       = weather["clouds"]["all"]
       save!
     end
   end
 
   def weather_summary
-    "The weather is #{description}, with a temperature of #{temp} and
-    wind speeds of #{wind_speed}"
+    "Conditions: #{description},
+    Temperature: #{temp},
+    Max Temp:    #{max_temp},
+    Wind Speeds: #{wind_speed},
+    Wind Direction: #{wind_dir},
+    Cloud Cover: #{clouds}"
   end
 
   private
