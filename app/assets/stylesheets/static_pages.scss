@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import url(http://fonts.googleapis.com/css?family=Gravitas+One|Roboto+Slab);
+$table-border-size: 1px solid blue;
 
 /* Home Page Styling */
 
@@ -10,7 +11,6 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  // width: 100%;
 }
 
 .hero {
@@ -30,7 +30,6 @@ body {
 .hero h2.title {
   font-size: 6em;
   color: #B8AC32;
-  // margin-bottom: 2em;
   font-family: 'Gravitas One', serif;
 }
 .centered {
@@ -56,7 +55,6 @@ body {
 .icon-bar > * {
   font-size: 1rem;
   padding: 0rem;
-  // float: right;
   width: 33.33%;
 }
 
@@ -68,11 +66,6 @@ body {
 .bottom {
   margin-top: 5em;
   margin-bottom: 3em;
-
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center center;
-  // background-attachment: fixed;
 }
 
 /* About Page Styling */
@@ -99,15 +92,9 @@ body {
 
 /* user show page */
 
-.divide {
-  background: none repeat scroll 0% 0% rgba(27, 60, 89, 0.5);
-  height: 2em;
-  margin-top: 3em;
-}
-
 .user-dashboard {
   background: none repeat scroll 0% 0% rgba(187, 172, 50, 0.40);
-  margin-top: 5em;
+  margin-top: 3em;
 }
 
 .user-dashboard {
@@ -115,24 +102,23 @@ body {
 }
 
 img.img-circle.img-thumbnail.home-image {
-  height: 200px;
+  height: 100px;
   margin-top: 2em;
   margin-bottom: 2em;
 }
 
-.user-content {
-  margin-top: 2em;
-}
+/* I like the setup below but it itsn't needed for a logout */
 
-#logout {
-  background-color: transparent;
-  border-width: 5px;
-  color: #60BFBF;
-  font-weight: 180px;
-  border-color: #60BFBF;
-  margin-top: 20px;
-  font-size: 2em;
-}
+// #logout {
+//   background-color: transparent;
+//   border-width: 5px;
+//   color: #60BFBF;
+//   font-weight: 180px;
+//   border-color: #60BFBF;
+//   margin-top: 20px;
+//   font-size: .5em;
+// }
+
 
 /* trips index and actions rendered within user dashboard */
 .trip-index {
@@ -143,22 +129,25 @@ img.img-circle.img-thumbnail.home-image {
   margin-top: 3em;
 }
 
+.trip-table {
+  margin-top: -3em;
+}
+
+#table {
+  border-spacing: 0;
+  // border: $table-border-size;
+}
+
 #add-trip {
   background-color: transparent;
   border-width: 5px;
   color: #60BFBF;
-  font-weight: 180px;
+  // font-weight: 200px;
   border-color: #60BFBF;
-  font-size: 2em;
+  font-size: .8em;
 }
 
-.add-button {
-  margin-bottom: 1em;
-}
-
-// .all-trips {
-//
-// }
+/* Add Trip form */
 
 .new-trip-form {
   margin-top: 3em;

@@ -1,6 +1,6 @@
 <div class="trip-index">
   <div class="title">
-    <h1 class="centered">Your Trips</h1>
+    <h2 class="centered">Your Trips</h2>
   </div>
 
   <div class="add-button" align="center">
@@ -9,36 +9,36 @@
     </section>
   </div>
 
-  <section class="row">
-    <div class="trip-table">
-      <table class=responsive align="center">
-        <thead>
-          <th width="200">Name</th>
-          <th width="150">Longitude</th>
-          <th width="150">Latitude</th>
-          <th width="400">Climate Data</th>
-        </thead>
-            <% @trips.each do |trip| %>
-        <tbody>
-          <div class="all-trips">
-              <td><%= trip.name %></td>
-              <td><%= trip.long %></td>
-              <td><%= trip.lat %></td>
-              <% if !trip.weather.nil? %>
-                <td>Conditions: <%= trip.weather.description %></td><br>
-                <td>Temperature: <%= trip.weather.temp %></td><br>
-                <td>Wind Speed: <%= trip.weather.wind_speed %></td><br>
-                <td>Wind Direction: <%= trip.weather.degree %></td><br>
-              <% else %>
-                <td>
-                  "Weather not available at this time"
-                </td>
+  <div class="trip-table">
+    <section class="row">
+        <table class=responsive align="center" id="table">
+          <thead>
+            <th width="150">Name</th>
+            <th width="150">Longitude</th>
+            <th width="150">Latitude</th>
+            <th width="300">Climate Data</th>
+          </thead>
+              <% @trips.each do |trip| %>
+          <tbody>
+            <div class="all-trips">
+                <td><%= trip.name %></td>
+                <td><%= trip.long %></td>
+                <td><%= trip.lat %></td>
+                <% if !trip.weather.nil? %>
+                  <td>Conditions: <%= trip.weather.description %><br>
+                      Temperature: <%= trip.weather.temp %><br>
+                      Wind Speed: <%= trip.weather.wind_speed %><br>
+                      Wind Direction: <%= trip.weather.degree %></td><br>
+                <% else %>
+                  <td>
+                    "Weather not available at this time"
+                  </td>
+                <% end %>
               <% end %>
-            <% end %>
-          </div>
-        </tbody>
+            </div>
+          </tbody>
 
-      </table>
-    </div>
-  </section>
+        </table>
+    </section>
+  </div>
 </div>
