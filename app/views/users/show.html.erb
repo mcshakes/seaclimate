@@ -1,40 +1,18 @@
 <div class="user-dashboard">
-
-  <div class="divide">
-    <section class="row">
-      <div class="columns small-12"></div>
-    </section>
-  </div>
-
   <div class="user-content">
     <section class="row">
-      <div class="columns large-12">
-        <h1 class="centered">You Are Logged In As:</h1>
 
-        <div class="user-image centered">
-          <div class="columns large-12">
-            <%= image_tag current_user.image, class: "img-circle img-thumbnail home-image" %>
-          </div>
+        <div class="columns large-6">
+          <%= image_tag current_user.image, class: "img-circle img-thumbnail home-image" %>
         </div>
 
-        <h2 class="centered"> <%= current_user.nickname %></h2>
-
-        <div class="log-out" align="center">
-          <section class="row">
-            <%= link_to "Log Out", logout_path, method: :delete, class: "button radius", id: "logout" %>
-          </section>
-        </div>
-
+      <div class="columns large-6">
+        <h1 class="centered">Logged In As:</h1>
+        <h3 class="centered"> <%= current_user.nickname %></h3>
       </div>
+
     </section>
   </div>
-
-  <div class="divide">
-    <section class="row">
-      <div class="columns small-12"></div>
-    </section>
-  </div>
-
 
 </div>
 
