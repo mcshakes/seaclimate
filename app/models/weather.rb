@@ -16,11 +16,11 @@ class Weather < ActiveRecord::Base
 
   def weather_summary
     "Conditions: #{description},
-    Temperature: #{temp},
+    Temperature: #{temp} Kelvin,
     Max Temp:    #{max_temp},
-    Wind Speeds: #{wind_speed},
+    Wind Speeds: #{wind_speed} mps,
     Wind Direction: #{wind_dir},
-    Cloud Cover: #{clouds}"
+    Cloud Cover: #{clouds} %"
   end
 
   private
