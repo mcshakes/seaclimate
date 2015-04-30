@@ -8,6 +8,8 @@ class Weather < ActiveRecord::Base
       self.temp         = weather["main"]["temp"]
       self.wind_speed   = weather["wind"]["speed"]
       self.degree     = weather["wind"]["deg"]
+      self.max_temp   = weather["main"]["temp_max"]
+      self.cloud      = weather["clouds"]["all"]
       save!
     end
   end
