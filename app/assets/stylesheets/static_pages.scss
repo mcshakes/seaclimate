@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import url(http://fonts.googleapis.com/css?family=Gravitas+One|Roboto+Slab);
+$table-border-size: 1px solid blue;
 
 /* Home Page Styling */
 
@@ -134,6 +135,7 @@ img.img-circle.img-thumbnail.home-image {
 
 #table {
   border-spacing: 0;
+  // border: $table-border-size;
 }
 
 #add-trip {
