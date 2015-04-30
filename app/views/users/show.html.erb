@@ -1,18 +1,16 @@
 <div class="user-dashboard">
   <div class="user-content">
     <section class="row">
-      <div class="columns large-6">
-        <h1 class="centered">You Are Logged In As:</h1>
 
-        <div class="user-image centered">
-          <div class="columns large-6">
-            <%= image_tag current_user.image, class: "img-circle img-thumbnail home-image" %>
-          </div>
+        <div class="columns large-6">
+          <%= image_tag current_user.image, class: "img-circle img-thumbnail home-image" %>
         </div>
 
-        <h2 class="centered"> <%= current_user.nickname %></h2>
-
+      <div class="columns large-6">
+        <h1 class="centered">Logged In As:</h1>
+        <h3 class="centered"> <%= current_user.nickname %></h3>
       </div>
+
     </section>
   </div>
 
