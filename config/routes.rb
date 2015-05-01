@@ -13,5 +13,6 @@ Rails.application.routes.draw do
 
   post 'notification/notify' => 'notification#notify'
 
+  resources :receive_text, only: :create
 
 end
