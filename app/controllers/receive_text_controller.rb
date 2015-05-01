@@ -11,6 +11,6 @@ class ReceiveTextController < ApplicationController
   def create
     name = params["Body"]
     from_number = params["From"]
-    render xml
+    render xml: "<Response/>"
   end
 end
