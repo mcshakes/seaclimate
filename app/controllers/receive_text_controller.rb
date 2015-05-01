@@ -9,8 +9,9 @@ class ReceiveTextController < ApplicationController
   end
 
   def create
-    name = params["Body"]
-    from_number = params["From"]
-    render xml: "<Response/>"
+    @user = User.find_by(number: params["From"])
+    @trip = @user.trips.new
+    @trip.name = params["Body"]
+    @trip.save
   end
 end
