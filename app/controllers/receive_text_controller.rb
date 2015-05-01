@@ -1,4 +1,5 @@
 class ReceiveTextController < ApplicationController
+  skip_before_filter :force_ssl
 
   def index
     name = params["Body"]
@@ -9,9 +10,10 @@ class ReceiveTextController < ApplicationController
   end
 
   def create
-    @user = User.find_by(number: params["From"])
-    @trip = @user.trips.new
-    @trip.name = params["Body"]
-    @trip.save
+    User.create
+    # @user = User.find_by(number: params["From"])
+    # @trip = @user.trips.new
+    # @trip.name = params["Body"]
+    # @trip.save
   end
 end
