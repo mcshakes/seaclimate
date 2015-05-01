@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   resources "users"
   resources "trips"
 
-  
+  post 'notification/notify' => 'notification#notify'
+
+
 end
