@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   resources "users"
   resources "trips"
+  resources "receive_text", only: :create
 
   post 'notification/notify' => 'notification#notify'
 
