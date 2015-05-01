@@ -10,10 +10,12 @@ class ReceiveTextController < ApplicationController
   end
 
   def create
-    User.create
-    # @user = User.find_by(number: params["From"])
-    # @trip = @user.trips.new
-    # @trip.name = params["Body"]
-    # @trip.save
+    # User.create
+    # binding.pry
+    @user = User.find_by(number: params["From"])
+    @trip = @user.trips.new
+    @trip.name = params["Body"]
+    @trip.save
+    render :text => "HEEEY"
   end
 end
