@@ -20,22 +20,24 @@
           </thead>
               <% @trips.each do |trip| %>
           <tbody>
-            <div class="all-trips">
                 <td><%= trip.name %></td>
                 <td><%= trip.long %></td>
                 <td><%= trip.lat %></td>
                 <% if !trip.weather.nil? %>
-                  <td>Conditions: <%= trip.weather.description %><br>
-                      Temperature: <%= trip.weather.temp %><br>
-                      Wind Speed: <%= trip.weather.wind_speed %><br>
-                      Wind Direction: <%= trip.weather.degree %></td><br>
+                  <td>
+                    <ul class="table-list">
+                      <li>Conditions: <%= trip.weather.description %></li>
+                      <li>Temperature: <%= trip.weather.temp %></li>
+                      <li>Wind Speed: <%= trip.weather.wind_speed %></li>
+                      <li>Wind Direction: <%= trip.weather.degree %></li>
+                    </ul>
+                  </td>
                 <% else %>
                   <td>
                     "Weather not available at this time"
                   </td>
                 <% end %>
               <% end %>
-            </div>
           </tbody>
 
         </table>
