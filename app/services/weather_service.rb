@@ -11,9 +11,6 @@ class WeatherService
 
   # WeatherService.new.weather_data(39.73,-104.9903) gets me Denver
   # Denver is (39.73,-104.9903)
-  # I also need to be able to take a city and country combo
-  # Return :wind, :rain, :weather[{:main, :description, :temp}]
-
 
   private
 
