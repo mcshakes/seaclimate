@@ -28,8 +28,8 @@
                     <ul class="table-list">
                       <li>Conditions: <%= trip.weather.description %></li>
                       <li>Temperature: <%= temperature_conversion(trip.weather.temp) %> Fahrenheit</li>
-                      <li>Wind Speed: <%= trip.weather.wind_speed %></li>
-                      <li>Wind Direction: <%= trip.weather.degree %></li>
+                      <li>Wind Speed: <%= trip.weather.wind_speed %> MPS</li>
+                      <li>Wind Direction: <%= trip.weather.degree %> degrees</li>
                     </ul>
                   </td>
                 <% else %>
