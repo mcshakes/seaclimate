@@ -1,12 +1,6 @@
 require 'test_helper'
 
 class SessionsControllerTest < ActionController::TestCase
-
-  # def setup
-  #   request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:twitter]
-  # end
-  #
-
   def mock_auth_hash
     OmniAuth.config.mock_auth[:twitter] = OmniAuth::AuthHash.new({
       "provider" => "twitter",
