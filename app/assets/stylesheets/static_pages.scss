@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import url(http://fonts.googleapis.com/css?family=Gravitas+One|Roboto+Slab);
-$table-border-size: 1px solid blue;
+@import url(http://fonts.googleapis.com/css?family=Exo:400,500);
 
 /* Home Page Styling */
 
@@ -11,6 +11,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Exo', sans-serif;
 }
 
 .hero {
@@ -24,7 +25,7 @@ body {
   margin: auto;
   padding: auto;
   font-style: normal;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Exo', sans-serif;
 }
 
 .hero h2.title {
@@ -95,6 +96,7 @@ body {
 .user-content {
   background: none repeat scroll 0% 0% rgba(187, 172, 50, 0.40);
   margin-top: 3em;
+  font-family: 'Exo', sans-serif;
 }
 
 .user-dashboard {
@@ -146,6 +148,3 @@ img.img-circle.img-thumbnail.home-image {
   // border-width: 5px;
   // border-color: #60BFBF;
 }
-
-.row.centered {
-  }
