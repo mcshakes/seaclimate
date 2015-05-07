@@ -15,5 +15,6 @@ class ReceiveTextController < ApplicationController
     trip = Trip.create(lat: lat, long: long)
     SMS.send_text(trip)
     user.trips << trip
+    render nothing: true, status: 200
   end
 end
