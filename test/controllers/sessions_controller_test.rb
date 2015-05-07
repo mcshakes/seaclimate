@@ -27,13 +27,4 @@ class SessionsControllerTest < ActionController::TestCase
     mock_auth_hash
     get :create
   end
-
-  test "should create new user" do
-    skip
-    create_user
-    assert_equal session[:user_id], "fakemocker"
-    assert_redirected_to user_path(nickname: "fakemocker")
-  end
-
-
 end
