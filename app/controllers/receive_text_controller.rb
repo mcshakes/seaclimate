@@ -3,7 +3,7 @@ class ReceiveTextController < ApplicationController
 
   def index
     name = params["Body"]
-    ENV["TWILIO_VERIFIED_NUMBER"] = params["From"]
+    from_number = params["From"]
 
     SMSLogger.log_text_message ENV["TWILIO_NUMBER"], ENV['TWILIO_VERIFIED_NUMBER']
   end
