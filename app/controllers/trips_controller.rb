@@ -1,5 +1,4 @@
 class TripsController < ApplicationController
-
   def index
     @trips = Trip.all
   end
@@ -24,5 +23,4 @@ class TripsController < ApplicationController
   def trip_params
     params.require(:trip).permit(:name, :long, :lat)
   end
-
 end
