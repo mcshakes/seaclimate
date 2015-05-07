@@ -13,16 +13,14 @@
     <section class="row">
         <table class=responsive align="center" id="table">
           <thead>
-            <th width="150">Name</th>
             <th width="150">Longitude</th>
             <th width="150">Latitude</th>
             <th width="300">Climate Data</th>
           </thead>
               <% @trips.each do |trip| %>
           <tbody>
-                <td><%= trip.name %></td>
-                <td><%= trip.long %></td>
                 <td><%= trip.lat %></td>
+                <td><%= trip.long %></td>
                 <% if !trip.weather.nil? %>
                   <td>
                     <ul class="table-list">
