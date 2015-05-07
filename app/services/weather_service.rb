@@ -17,5 +17,4 @@ class WeatherService
   def parse(data)
     JSON.parse(data.body)
   end
-
 end
