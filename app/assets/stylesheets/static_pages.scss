@@ -107,19 +107,6 @@ img.img-circle.img-thumbnail.home-image {
   margin-bottom: 2em;
 }
 
-/* I like the setup below but it itsn't needed for a logout */
-
-// #logout {
-//   background-color: transparent;
-//   border-width: 5px;
-//   color: #60BFBF;
-//   font-weight: 180px;
-//   border-color: #60BFBF;
-//   margin-top: 20px;
-//   font-size: .5em;
-// }
-
-
 /* trips index and actions rendered within user dashboard */
 .trip-index {
   background: none repeat scroll 0% 0% rgba(187, 89, 50, 0.40);
@@ -135,14 +122,12 @@ img.img-circle.img-thumbnail.home-image {
 
 #table {
   border-spacing: 0;
-  // border: $table-border-size;
 }
 
 #add-trip {
   background-color: transparent;
   border-width: 5px;
   color: #60BFBF;
-  // font-weight: 200px;
   border-color: #60BFBF;
   font-size: .8em;
 }
