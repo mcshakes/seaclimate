@@ -26,12 +26,14 @@ body {
   padding: auto;
   font-style: normal;
   font-family: 'Exo', sans-serif;
+  text-shadow: 2px 2px 1px rgba(89, 89, 89, 0.62);
 }
 
 .hero h2.title {
   font-size: 6em;
   color: #B8AC32;
   font-family: 'Gravitas One', serif;
+  text-shadow: 3px 3px 1px rgba(89, 89, 89, 0.62);
 }
 .centered {
   text-align: center;
@@ -147,4 +149,12 @@ img.img-circle.img-thumbnail.home-image {
   background: none repeat scroll 0% 0% rgba(232, 230, 224, 0.65);
   // border-width: 5px;
   // border-color: #60BFBF;
+}
+
+.new-trip label {
+  width: 60%;
+}
+
+.new-trip input[type="submit"] {
+  margin-bottom: 20px;
 }
