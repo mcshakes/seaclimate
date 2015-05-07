@@ -1,4 +1,5 @@
 <div class="user-dashboard columns small-4">
+
   <div class="user-content">
     <section class="row">
         <div class="user-image centered">
@@ -9,6 +10,13 @@
         <h3 class="centered"> <%= current_user.number %></h3>
     </section>
   </div>
+
+  <div class="new-trip">
+      <section class="row">
+        <%= render template: "trips/new" %>
+      </section>
+  </div>
+
 </div>
 
 <section class="row columns medium-8">

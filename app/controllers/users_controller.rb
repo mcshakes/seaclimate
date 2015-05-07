@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   def show
     if number_added?
       @trips = Trip.all
+      @trip = Trip.new
     else
       redirect_to edit_user_path
     end
