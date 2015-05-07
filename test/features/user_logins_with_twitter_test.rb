@@ -32,6 +32,8 @@ class UserLoginTwitterTest < ActionDispatch::IntegrationTest
     click_link_or_button "Log In With Twitter"
     fill_in("Number", with: "+19707691296")
     click_link_or_button "Add Number"
+    # assert_equal user_path(id: user.id), current_path
+
     assert page.has_content?("Your Trips")
   end
 
