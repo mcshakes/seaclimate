@@ -1,11 +1,8 @@
 require 'test_helper'
 OmniAuth.config.test_mode = true
 
-# require 'omniauth_hash'
-
 class UserLoginTwitterTest < ActionDispatch::IntegrationTest
   include Capybara::DSL
-  # # include OmniauthHash
 
   def mock_auth_hash
     OmniAuth.config.mock_auth[:twitter] = OmniAuth::AuthHash.new({
@@ -32,18 +29,6 @@ class UserLoginTwitterTest < ActionDispatch::IntegrationTest
     click_link_or_button "Log In With Twitter"
     fill_in("Number", with: "+19707691296")
     click_link_or_button "Add Number"
-    # assert_equal user_path(id: user.id), current_path
-
     assert page.has_content?("Your Trips")
   end
-
-  test "it clicks and authorizes through twitter" do
-    visit root_path
-    click_link_or_button "Log In"
-    click_link_or_button "Login with Twitter"
-    assert page.has_content?("fakemocker")
-    # assert_equal user_path(id: user.id), current_path
-  end
-
-
 end
