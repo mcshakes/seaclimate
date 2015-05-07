@@ -3,29 +3,21 @@
     <h2 class="centered">Add New Trip</h2>
   </section>
 
-  <section class="row">
-    <div class="input-form">
+    <div class="input-form" align="center">
       <%= form_for @trip do |f|%>
-
-      <div class="row centered">
-        <div class="large-4 columns">
+      <div class="row">
           <label>Latitude
             <%= f.text_field :lat%>
           </label>
-        </div>
       </div>
-
-      <div class="row centered">
-        <div class="large-4 columns">
+      <div class="row">
           <label>Longitude
             <%= f.text_field :long%>
           </label>
-        </div>
       </div>
 
         <%= f.submit "Create Trip" %>
       <% end %>
-    </section>
   </div>
 
 </div>
