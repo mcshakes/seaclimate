@@ -10,7 +10,7 @@ class WeatherService
   end
 
   # WeatherService.new.weather_data(39.73,-104.9903) gets me Denver
-  # Denver is (39.73,-104.9903)
+  # Denver is (39.73,-104.9903)a
 
   private
 

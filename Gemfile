@@ -11,6 +11,7 @@ gem 'foundation-rails'
 gem 'foundation-icons-sass-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'draper'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -34,7 +35,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'spring'
+  gem 'spring', '~> 1.3.4'
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'

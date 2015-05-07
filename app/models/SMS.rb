@@ -13,9 +13,14 @@ class SMS
 
   def self.message_body(trip)
     "Conditions: #{trip.weather.description}\n" +
-    "Temperature: #{trip.weather.temp}\n" +
-    "Wind Speed: #{trip.weather.wind_speed}\n" +
-    "Wind Direction: #{trip.weather.degree}\n"
+    "Temperature: #{temp_converter(trip.weather.temp)} Fahrenheit\n" +
+    "Wind Speed: #{trip.weather.wind_speed} MPS\n" +
+    "Wind Direction: #{trip.weather.degree} degrees\n"
+  end
+
+  def self.temp_converter(temp)
+    temperature = temp * 9 / 5 - 459.67
+    temperature.round(2)
   end
 
 
