@@ -29,9 +29,10 @@ class UserLoginTwitterTest < ActionDispatch::IntegrationTest
 
   test "user can login with twitter" do
     visit root_path
-    click_link_or_button "Log In"
-    assert_equal current_path, dashboard_path
-    assert page.has_content?("Login with Twitter")
+    click_link_or_button "Log In With Twitter"
+    fill_in("Number", with: "+19707691296")
+    click_link_or_button "Add Number"
+    assert page.has_content?("Your Trips")
   end
 
   test "it clicks and authorizes through twitter" do
