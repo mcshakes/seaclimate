@@ -39,4 +39,5 @@ group :development, :test do
   gem 'launchy'
   gem 'simplecov'
   gem 'codeclimate-test-reporter'
+  gem 'vcr'
 end
