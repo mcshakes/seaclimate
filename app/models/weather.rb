@@ -12,7 +12,6 @@ class Weather < ActiveRecord::Base
     end
   end
 
-
   private
 
   def weather
