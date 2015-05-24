@@ -8,7 +8,7 @@
 body {
   background-image: image-url("SafeCatch-03.png");
   background-attachment: fixed;
-  background-position: 50%;
+  // background-position: right 10px center;  THis could be for the user page
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Lato', sans-serif;
@@ -21,7 +21,7 @@ body {
 
 .hero h2.start {
   line-height: 0.9em;
-  color: #B8AC32;
+  color: #DFFDFF;
   margin: auto;
   padding: auto;
   font-style: normal;
@@ -40,19 +40,19 @@ body {
 }
 
 .introduction {
-  background: none repeat scroll 0% 0% rgba(44, 41, 35,0.75);
   text-shadow: 1px 1px 1px rgba(44, 41, 35, 0.5);
   margin-top: 5em;
 
 }
 
 .hero p.intro{
-  color: #FF9800;
+  color: #DFFDFF;
   font-size: 1.5em;
 }
 
 .explanation {
-  background: none repeat scroll 0% 0% rgba(187, 172, 50, 0.75);
+  // background: none repeat scroll 0% 0% rgba(187, 172, 50, 0.75);
+  background: #DFFDFF
 }
 
 .icon-bar > * {
