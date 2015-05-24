@@ -10,7 +10,9 @@
 
     <section class="centered front-login-options">
       <div class="columns small-12 large-10 small-centered">
-        <%= link_to image_tag("sign-in-with-twitter-gray.png"), "/auth/twitter", class: "btn btn-lg btn-default btn-home" %>
+        <% unless current_user %>
+          <%= link_to image_tag("sign-in-with-twitter-gray.png"), "/auth/twitter", class: "btn btn-lg btn-default btn-home" %>
+          <% end %>
       </div>
     </section>
 
