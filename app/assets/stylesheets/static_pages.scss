@@ -1,8 +1,8 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import url(https://fonts.googleapis.com/css?family=Gravitas+One|Roboto+Slab);
 @import url(http://fonts.googleapis.com/css?family=Lato);
+
 /* Home Page Styling */
 
 body {
@@ -25,16 +25,9 @@ body {
   margin: auto;
   padding: auto;
   font-style: normal;
-  font-family: 'Exo', sans-serif;
   text-shadow: 2px 2px 1px rgba(89, 89, 89, 0.62);
 }
 
-.hero h2.title {
-  font-size: 6em;
-  color: #B8AC32;
-  font-family: 'Gravitas One', serif;
-  text-shadow: 3px 3px 1px rgba(89, 89, 89, 0.62);
-}
 .centered {
   text-align: center;
 }
@@ -42,13 +35,14 @@ body {
 .introduction {
   text-shadow: 1px 1px 1px rgba(44, 41, 35, 0.5);
   margin-top: 5em;
-
 }
 
 .hero p.intro{
   color: #DFFDFF;
   font-size: 1.5em;
+  margin-top: 1em;
 }
+
 
 .explanation {
   // background: none repeat scroll 0% 0% rgba(187, 172, 50, 0.75);
