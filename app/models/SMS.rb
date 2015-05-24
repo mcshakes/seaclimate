@@ -18,6 +18,8 @@ class SMS
     "Wind Direction: #{trip.weather.degree} degrees\n"
   end
 
+  private
+
   def self.temp_converter(temp)
     temperature = temp * 9 / 5 - 459.67
     temperature.round(2)

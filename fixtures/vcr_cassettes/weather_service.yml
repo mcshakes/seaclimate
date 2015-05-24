@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/weather?lat=39.73&lon=-104.99&APPID=c697003b4853749a6da60f24abcc08a9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      server:
+      - nginx
+      date:
+      - Wed, 20 May 2015 00:16:38 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      x-source:
+      - redis
+      access-control-allow-origin:
+      - "*"
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: |
+        {"coord":{"lon":-104.99,"lat":39.73},"sys":{"message":0.7314,"country":"US","sunrise":1432122036,"sunset":1432174345},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"base":"stations","main":{"temp":278.354,"temp_min":278.354,"temp_max":278.354,"pressure":813.22,"sea_level":1029.33,"grnd_level":813.22,"humidity":100},"wind":{"speed":1.62,"deg":57.0071},"clouds":{"all":92},"rain":{"3h":1.345},"dt":1432080245,"id":5419384,"name":"Denver","cod":200}
+    http_version: 
+  recorded_at: Wed, 20 May 2015 00:16:38 GMT
+recorded_with: VCR 2.9.3
