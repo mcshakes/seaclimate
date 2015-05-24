@@ -1,29 +1,29 @@
 <div class="front">
 
   <div class="hero">
-    <section class="row headline">
+    <section class="row">
       <div class="columns small-12 large-10 small-centered">
         <h2 class="centered start">Know Before You Go</h2>
-        <h2 class="centered title">SafeCatch</h2>
       </div>
-    </section>
 
-    <section class="centered front-login-options">
-      <div class="columns small-12 large-10 small-centered">
-        <%= link_to image_tag("sign-in-with-twitter-gray.png"), "/auth/twitter", class: "btn btn-lg btn-default btn-home" %>
-      </div>
+      <section class="row">
+          <p class="centered intro">
+            Get weather info based on your coordinates
+          </p>
+      </section>
     </section>
 
     <div class="introduction">
-      <section class="row">
-        <div class="columns small-12 large-8 small-centered">
-          <p class="centered intro">
-            Venture into the Unknown
-          </br>We Make Sure You Get Home safe.
-          </p>
-        </div>
-      </section>
+
     </div>
+
+    <section class="centered front-login-options">
+      <div class="columns small-12 large-10 small-centered">
+        <% unless current_user %>
+          <%= link_to image_tag("sign-in-with-twitter-gray.png"), "/auth/twitter", class: "btn btn-lg btn-default btn-home" %>
+          <% end %>
+      </div>
+    </section>
 
     <div class="explanation">
       <section class="row">

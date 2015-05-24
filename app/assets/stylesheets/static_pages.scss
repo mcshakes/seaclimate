@@ -1,17 +1,17 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import url(https://fonts.googleapis.com/css?family=Gravitas+One|Roboto+Slab);
-@import url(https://fonts.googleapis.com/css?family=Exo:400,500);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 /* Home Page Styling */
 
 body {
-  background-image: image-url("Optimized-ocean.jpg");
+  background-image: image-url("SafeCatch-03.png");
   background-attachment: fixed;
+  // background-position: right 10px center;  THis could be for the user page
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Exo', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .hero {
@@ -21,38 +21,32 @@ body {
 
 .hero h2.start {
   line-height: 0.9em;
-  color: #B8AC32;
+  color: #DFFDFF;
   margin: auto;
   padding: auto;
   font-style: normal;
-  font-family: 'Exo', sans-serif;
   text-shadow: 2px 2px 1px rgba(89, 89, 89, 0.62);
 }
 
-.hero h2.title {
-  font-size: 6em;
-  color: #B8AC32;
-  font-family: 'Gravitas One', serif;
-  text-shadow: 3px 3px 1px rgba(89, 89, 89, 0.62);
-}
 .centered {
   text-align: center;
 }
 
 .introduction {
-  background: none repeat scroll 0% 0% rgba(44, 41, 35,0.75);
   text-shadow: 1px 1px 1px rgba(44, 41, 35, 0.5);
   margin-top: 5em;
-
 }
 
 .hero p.intro{
-  color: #FF9800;
+  color: #DFFDFF;
   font-size: 1.5em;
+  margin-top: 1em;
 }
 
+
 .explanation {
-  background: none repeat scroll 0% 0% rgba(187, 172, 50, 0.75);
+  // background: none repeat scroll 0% 0% rgba(187, 172, 50, 0.75);
+  background: #DFFDFF
 }
 
 .icon-bar > * {
