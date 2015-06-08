@@ -35,6 +35,7 @@ group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'spring', '~> 1.3.4'
+  gem 'simplecov', :require => false
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
