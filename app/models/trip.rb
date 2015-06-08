@@ -7,6 +7,4 @@ class Trip < ActiveRecord::Base
     build_weather.create_from_weather_service
   end
 
-
-
 end
