@@ -500,28 +500,6 @@
         null,
         null
       ],
-      "/Users/edmac/Turing/Module_3/PersonalProject/global_fish/app/controllers/receive_text_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null
-      ],
       "/Users/edmac/Turing/Module_3/PersonalProject/global_fish/app/services/weather_service.rb": [
         1,
         1,
@@ -543,8 +521,30 @@
         2,
         null,
         null
+      ],
+      "/Users/edmac/Turing/Module_3/PersonalProject/global_fish/app/controllers/receive_text_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null
       ]
     },
-    "timestamp": 1433782247
+    "timestamp": 1434324637
   }
 }
