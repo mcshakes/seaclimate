@@ -9,7 +9,7 @@ Get the weather by SMS or on the Web App. Text the app with latitude and longitu
 I remember reading an article about fishermen in Bangladesh and Eastern Africa communicating by text message. They would let each other know of the weather conditions and choice fishing spots. All by text message.
 
 + Logging in with with Twitter
-..* They project uses Twitter OAuth. Simply click on the Login with Twitter button.
++ The project uses Twitter OAuth. Simply click on the Login with Twitter button.
 
 ### Design Goals
 
